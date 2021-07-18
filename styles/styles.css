@@ -194,22 +194,6 @@ a {
   font-size: 24px;
 }
 
-.tableCartContainer {
-  display: flex;
-  margin: 16px;
-  background-color: var(--b2);
-  width: 200px;
-  padding: 32px;
-  border-radius: 10px;
-}
-#tablecarttotal {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  margin: 16px;
-  width: 30%;
-}
 #cards {
   margin: 24px;
 }
@@ -249,16 +233,25 @@ a {
   background-color: var(--b4);
   border: none;
 }
-#tableCart {
-  margin: 16px auto;
+/*Carrito de comprasretractil*/
+
+.tableContainer {
+  position: absolute;
+  left: 60%;
+  margin: 0;
   background: var(--b6);
   width: 40%;
-  border-radius: 10px;
+  height: 100vh;
+  border-radius: 10px 0px 0px 10px;
+  transition: left 0.4s;
   border: 1px solid rgba(0, 0, 0, 0);
+  z-index: 3;
 }
-#footer {
-  border-radius: 2px;
+
+.table_visible {
+  left: 100%;
 }
+
 #btn-more {
   background-color: var(--b4);
 }
@@ -528,4 +521,18 @@ a {
   .navigation .navContainer .userContainer .menu_visible {
     left: 0%;
   }
+}
+
+.cartShowContainer {
+  display: flex;
+  width: 30%;
+  background-color: var(--b3);
+  height: 100vh;
+  z-index: 1;
+  left: 100%;
+}
+.headerCart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
