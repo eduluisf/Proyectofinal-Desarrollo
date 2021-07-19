@@ -25,18 +25,23 @@ a {
 .navigation {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   height: 8vh;
   background-color: var(--b2);
   overflow: hidden;
   z-index: 3;
+  margin: 0;
+  padding: 0;
 }
 .navigation .navContainer {
   display: flex;
+  width: 100%;
   flex-direction: row;
   list-style: none;
   justify-content: space-around;
   margin: 0 32px;
+  overflow: hidden;
 }
 
 .navigation .navContainer li {
@@ -44,7 +49,7 @@ a {
   justify-content: space-around;
   font-size: 22px;
   margin: 8px;
-  margin-left: 0px;
+  overflow: hidden;
 }
 .hamb-menu {
   display: none;
@@ -72,12 +77,14 @@ a {
 }
 .buscador {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 650px;
   border-radius: 10px;
   padding: 4px 0px;
-  margin: 0 1em;
+  margin: 0;
+  width: 150vh;
+}
+.userContainerBuscador {
 }
 
 .buscador .filterbtn {
@@ -106,7 +113,7 @@ a {
   margin: 8px;
 }
 .buscador .searchButton {
-  width: 100%;
+  width: 300%;
   border: none;
   height: 36px;
   padding: 16px;
@@ -117,22 +124,24 @@ a {
   display: flex;
   width: 100%;
   margin: 0 1em;
-  padding: 0 4px;
+  justify-content: space-around;
   font-size: 16px;
   align-items: center;
-  justify-content: center;
   align-content: center;
+  padding: 0;
 }
 .navigation .navContainer .userContainer .menu_container {
   display: flex;
 
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 .navigation .navContainer .userContainer .menu_container .userItem {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  padding: 0;
 }
 .navigation .navContainer .userContainer .menu_container .userItem a {
   color: black;
@@ -236,7 +245,7 @@ a {
 /*Carrito de comprasretractil*/
 
 .tableContainer {
-  position: absolute;
+  position: fixed;
   left: 60%;
   margin: 0;
   background: var(--b6);
@@ -260,6 +269,7 @@ a {
   background-color: var(--b5);
 }
 
+/*Estilos del forumlario */
 .containerForm {
   display: flex;
   flex-direction: row;
@@ -267,6 +277,13 @@ a {
   width: 100%;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  border-radius: 10px;
+  padding: 0;
+}
+.containerForm a {
+  color: black;
+  text-decoration: none;
 }
 
 .formContainer {
@@ -275,10 +292,11 @@ a {
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 100%;
+  width: 90%;
   height: 60vh;
-  background-color: var(--b6);
-  margin: 50px 100px 100px;
+  margin: 0;
+  padding: 64px;
+  margin: 32px;
   border-radius: 10px;
 }
 
@@ -305,12 +323,54 @@ a {
   margin: 16px;
   border-radius: 10px;
 }
+.btn-registerOther {
+  display: flex;
+  background-color: var(--b2);
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 0.5vh;
+  border: none;
+  margin: 16px;
+  border-radius: 10px;
+  flex-direction: row;
+  padding: 24px;
+}
+.btn-registerOther:hover {
+  display: flex;
+  background-color: var(--b2);
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 0.5vh;
+  border: none;
+  margin: 16px;
+  border-radius: 10px;
+  flex-direction: row;
+  padding: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-registerOther p {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+
+  margin: 0px;
+
+  padding: 24px;
+}
 
 .title-form {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-  width: 100%;
-  margin: 16px;
+  width: 50;
 }
 .contact-name {
   margin: 24px;
@@ -319,12 +379,33 @@ a {
   justify-content: center;
 }
 
+/*Media querys*/
+
+@media (max-width: 1200px) {
+  .buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    padding: 0px 0px;
+    margin: 0em;
+    width: 40vh;
+  }
+
+  .navigation .navContainer .userContainer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    width: 100%;
+  }
+}
 @media (max-width: 1024px) {
   .navigation {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 4vh;
+
     background-color: var(--b2);
     overflow: hidden;
   }
@@ -333,10 +414,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
+
     border-radius: 10px;
     padding: 0px 0px;
     margin: 0em;
+    width: 40vh;
   }
   .logoContainer {
     margin: 0px 8px 0 0px;
@@ -354,9 +436,10 @@ a {
 
   .navigation .navContainer .userContainer {
     display: flex;
-    margin: 0 0 0 0em;
+    margin: 0;
     padding: 0;
     font-size: 16px;
+    width: 100%;
   }
   .navigation .navContainer .userContainer .menu_container {
     padding: 0;
@@ -379,14 +462,15 @@ a {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 6vh;
+    height: 8vh;
     background-color: var(--b2);
     overflow: hidden;
+    position: fixed;
   }
 
   .buscador {
-    display: flex;
-    justify-content: center;
+    display: none;
+    justify-content: space-around;
     align-items: center;
     width: 300px;
     border-radius: 10px;
@@ -394,33 +478,86 @@ a {
     margin: 0em;
   }
 
+  .logoContainer p {
+    margin-top: 16px;
+  }
   .logoContainer a {
     display: flex;
-    font-size: 24px;
+    font-size: 32px;
     color: var(--b4);
     justify-content: space-around;
     margin: 16px 0px 16px 32px;
   }
+  .logoContainer a {
+    display: fixed;
+    z-index: 3;
+    bottom: 0;
+  }
 
   .navigation .navContainer .userContainer {
-    display: flex;
-    margin: 0 0 0 0em;
-    padding: 0;
+    padding: 0 16px;
+
     font-size: 16px;
+    z-index: 3;
   }
+
   .navigation .navContainer .userContainer .menu_container {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
     padding: 0;
+    background-color: var(--b1);
+    position: fixed;
+    margin: 0px;
+    left: 0px;
+    top: 64px;
+    border-bottom: solid 1px var(--b4);
+    height: 95vh;
+    bottom: 200px;
+    left: 100%;
+    transition: left 0.4s;
   }
+  .userItem {
+    display: flex;
+    width: 95%;
+    padding: 0;
+    margin: 36px auto;
+    height: 10%;
+    border-radius: 25px;
+    background-color: var(--b2);
+    box-shadow: 0 4px 8px 0 rgba(66, 62, 3, 0.2),
+      0 4px 8px 0 rgba(0, 0, 0, 0.19);
+    align-content: center;
+    align-items: center;
+  }
+
+  .navigation .navContainer .userContainer .menu_container .userItem a {
+    font-size: 24px;
+  }
+
   .buscador .searchbtn {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    align-content: center;
     height: 36px;
     width: 36px;
     background-color: var(--b1);
     color: white;
     font-size: 14px;
     border-radius: 0 10px 10px 0;
+  }
+
+  .hamb-menu {
+    font-size: 32px;
+    border: none;
+    background: transparent;
+    display: block;
+    margin: 12px 16px 16px 30vh;
+  }
+
+  .navigation .navContainer .userContainer .menu_visible {
+    left: 0%;
   }
 }
 
