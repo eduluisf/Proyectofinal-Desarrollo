@@ -22,7 +22,7 @@
     <div class="circle"></div>
     <div class="circle"></div>
   </div>
-    
+    <!-- navigation -->
 
   <header>
 
@@ -40,7 +40,7 @@
         <ul class="navContainer"> 
             
     
-                <li>
+              <li>
                    <div class="buscador">
                         <div  class="filterbtn">
                         <i class="fas fa-filter"></i>
@@ -51,16 +51,20 @@
                        </div>
                    </div>
                 </li>
-
+             
+                <div class="hamb-menu">            
+                    <i class="fas fa-bars"></i>
+                  </div>            
+              </li>
        
 
-                 <li i class="userContainer" >                 
-                   <ul>
+                 <li  class="userContainer" >                 
+                   <ul id="menu_visible"  class="menu_container menu_visible" >
                     <li class="userItem"> <a href="index.html">HOME</a> </li>
                     <li class="userItem"> <a href="men.html">MEN</a> </li>
                     <li class="userItem"> <a href="women.html">WOMEN</a> </li>          
-                    <li class="userItem"  >  <a href="#"> <i class="fas fa-shopping-cart"></i></a></li>
-                    <li class="userItem" >  <a href="#"><i class="fas fa-user"></i></a> </li>                       
+                    <li class="userItem buttonCart"  >  <a href="#"> <i class="fas fa-shopping-cart"></i></a></li>
+                    <li class="userItem" >  <a href="log-in.html"><i class="fas fa-user"></i></a> </li>                       
                   </ul>
                  </li>
         </ul>
@@ -69,7 +73,6 @@
 </header>
 
 
-<!-- Carrusel/Boostrap -->
 
 
 
@@ -119,15 +122,12 @@
 </template>
 
 
-<!-- tablecart -->
-
-<table  id="tableCart" class="table">
+<table  id="tableCart" class="table  tableContainer table_visible">
 
   <!-- cards -->
-<div class="container">
-  <div class="row " id="cards"></div>
-</div>
+
   
+<!-- Tabla header -->
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -137,7 +137,11 @@
       <th scope="col">Total</th>
     </tr>
   </thead>
+
+  <!-- table body -->
   <tbody id="items"></tbody>
+
+  <!-- table footer -->
   <tfoot>
     <tr id="footer">
       <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
@@ -145,8 +149,13 @@
   </tfoot>
 </table>
 
-
+<div class="container">
+  <div class="row " id="cards"></div>
 </div>
+
+<!-- tablecart -->
+
+
 
 
 
@@ -154,14 +163,14 @@
 
 
 <!-- footerinf -->
-    
-    
-    
-    
+
+
+
+
     <footer>
       
-
-
+<!-- 
+info location -->
       <div class="inf-Footer">
         
           <div class="containerCard">
@@ -173,7 +182,9 @@
               </div>
           </div>
       
-      
+     
+          <!-- info networks -->
+          
       <div class="containerCard">
         
           <div class="netContainer">
