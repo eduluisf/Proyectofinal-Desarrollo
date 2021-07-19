@@ -50,13 +50,11 @@
                         <i class="fas fa-search"></i>
                        </div>
                    </div>
-                </li>
-             
+                </li>             
                 <div class="hamb-menu">            
                     <i class="fas fa-bars"></i>
                   </div>            
-              </li>
-       
+              </li>      
 
                  <li  class="userContainer" >                 
                    <ul id="menu_visible"  class="menu_container menu_visible" >
@@ -71,6 +69,52 @@
     </div>
 
 </header>
+
+
+
+  <div class="filtercontainer">
+
+
+
+<div class="filterItems">
+
+  <div class="filterItem">
+  <div class="filterPrecio">  
+    <label for="volume">Precio</label>
+    <input type="range" class="sliderPrecio"id="precioSliderFilter" name="Precio"
+    min="10000" max="100000"></div>
+    
+  </div>
+    <div class="filterItem">
+
+      <h3> Categorias</h3>
+      <p>Zapatos</p>        
+      <p>Pamtañpmes</p>        
+      <p>Camisas</p>
+      
+    </div>
+    
+   
+    <div class="filterItem">
+    
+    <h3>Color</h3> 
+    <div class="colorSelectblack"></div>
+    <div class="colorSelectWhite"></div>
+    <div class="colorSelectWhite"></div>
+    <div class="colorSelectRed"></div>
+  </div>
+</div>
+  </div>
+  
+  <div class="container">
+    <div class="row" id="cards"></div>
+  </div>
+  
+
+
+   
+
+
 
 
 
@@ -107,7 +151,7 @@
 </template>
 
 <template id="template-card">
-  <div class="col-lg-4  col-md-6 col-xl-3" >
+  <div class="col-lg-3  col-md-6 col-xl-4" >
     <div class="card" style="width:18rem; padding:4px; margin:8px 0px;" >
 
       <img src="" alt="" class="card-img-top">
@@ -128,7 +172,7 @@
 
   
 <!-- Tabla header -->
-  <thead>
+  <thead class="headerTable">
     <tr>
       <th scope="col">#</th>
       <th scope="col">Item</th>
@@ -149,9 +193,7 @@
   </tfoot>
 </table>
 
-<div class="container">
-  <div class="row " id="cards"></div>
-</div>
+
 
 <!-- tablecart -->
 
