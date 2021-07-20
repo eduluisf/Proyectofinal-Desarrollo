@@ -1,52 +1,52 @@
 [
   {
+    "precio": " 550",
+    "id": 4,
+    "title": "T-SHIRT green",
+    "thumbnailUrl": "assets/img_man_tshirt_4.png"
+  },
+  {
     "precio": 600,
     "id": 1,
     "title": "T-SHIRT black",
-    "thumbnailUrl": "assets/tshirt1.jpg"
+    "thumbnailUrl": "assets/img_man_tshirt_5.jpg"
   },
+
   {
     "precio": 500,
     "id": 2,
     "title": "T-SHIRT yellow",
-    "thumbnailUrl": "assets/tshirt-yellow.png"
+    "thumbnailUrl": "assets/img_man_tshirt_2.jpg"
   },
   {
     "precio": 500,
     "id": 3,
     "title": "T-SHIRT xxx",
-    "thumbnailUrl": "assets/tshirt-blue.png"
+    "thumbnailUrl": "assets/img_man_tshirt_3.png"
   },
-
   {
     "precio": " 550",
     "id": 4,
     "title": "T-SHIRT green",
-    "thumbnailUrl": "assets/tshirt-green.png"
+    "thumbnailUrl": "assets/img_man_tshirt_4.png"
   },
   {
     "precio": 600,
     "id": 1,
     "title": "T-SHIRT black",
-    "thumbnailUrl": "assets/tshirt1.jpg"
+    "thumbnailUrl": "assets/img_man_tshirt_5.jpg"
   },
+
   {
     "precio": 500,
     "id": 2,
     "title": "T-SHIRT yellow",
-    "thumbnailUrl": "assets/tshirt-yellow.png"
+    "thumbnailUrl": "assets/img_man_tshirt_2.jpg"
   },
   {
     "precio": 500,
     "id": 3,
-    "title": "T-SHIRT blue",
-    "thumbnailUrl": "assets/tshirt-blue.png"
-  },
-
-  {
-    "precio": 550,
-    "id": 4,
-    "title": "T-SHIRT green",
-    "thumbnailUrl": "assets/tshirt-green.png"
+    "title": "T-SHIRT xxx",
+    "thumbnailUrl": "assets/img_man_tshirt_3.png"
   }
 ]
