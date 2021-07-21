@@ -174,9 +174,6 @@ a {
     grid-template-rows: 100px;
     font-size: 24px; }
 
-.containerrow {
-  margin: 32 0 0 184px; }
-
 .container {
   margin: 0px 0px 0px 25%;
   padding: 0;
@@ -197,7 +194,7 @@ a {
   display: flex;
   flex-direction: column;
   border-radius: 10%;
-  margin: 16px;
+  margin: 0px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
   height: 50vh; }
   .card img {
@@ -320,7 +317,7 @@ a {
   align-items: center;
   align-content: center;
   justify-content: center;
-  padding: 32px; }
+  padding: 16px; }
 
 .btn-registerOther {
   display: flex;
@@ -367,11 +364,35 @@ a {
   width: 100%;
   margin: 32px 16px 16px 16px; }
 
-.cat-name {
+.contact-name {
   margin: 24px;
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.filterPrecio {
+  display: flex;
+  flex-direction: column;
+  margin: 0px; }
+  .filterPrecio .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 16px; }
+
+.sliderPrecio {
+  width: 100%; }
+
+.inputPrice {
+  width: 30%; }
+
+.chkboxContainer {
+  margin: 8px 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: center;
+  justify-content: space-between; }
 
 /*Media querys*/
 @media (max-width: 1200px) {
@@ -633,27 +654,3 @@ a {
   .filterItem p {
     font-size: 24px;
     padding: 12px 0px; }
-
-.filterPrecio {
-  display: flex;
-  flex-direction: column;
-  margin: 0px; }
-  .filterPrecio .buttonsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 16px; }
-
-.sliderPrecio {
-  width: 100%; }
-
-.inputPrice {
-  width: 30%; }
-
-.chkboxContainer {
-  margin: 8px 16px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-items: center;
-  justify-content: space-between; }
