@@ -39,11 +39,11 @@ items.addEventListener("click", (e) => {
   btnAction(e);
 });
 
-const fetchData = async () => {
+const fetchData = () => {
   try {
-    const res = await fetch("api.json");
-    const data = await res.json();
-    showCards(data);
+    $.get("api.json", function (data) {
+      showCards(data);
+    });
   } catch (error) {}
 };
 

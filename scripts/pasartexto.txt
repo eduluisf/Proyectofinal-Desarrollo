@@ -1,0 +1,45 @@
+const showCards = (data) => {
+  data.forEach((product) => {
+    cards.append(`   
+
+ <div class="col-lg-3  col-md-6 col-xl-3" >
+    <div class="card" style="width:18rem; padding:4px; margin:8px 0px;" >
+
+      <img src="${product.thumbnailUrl}" alt="" class="card-img-top">      
+      <div class="card-body">
+        <h5>${product.title}</h5>
+        <p>${product.precio}</p>
+        <button class="btn btn-dark">Comprar</button>
+      </div>
+    </div>
+  </div> 
+  `);
+  });
+};
+
+const showCart = () => {
+  Object.values(cart).forEach((product) => {
+    let total = product.cantidad * product.precio;
+    items.append(
+      `<tr>
+      <th class="template-cart"  scope="row">${product.id}</th>
+       <td>${product.title}</td>
+     <td>${product.cantidad}</td>
+     <td>
+         <button id="btn-more" class="btn btn-info btn-sm">
+             +
+         </button>
+         <button id="btn-less" class="btn btn-danger btn-sm">
+             -
+         </button>
+     </td>
+     <td>$ <span> ${total} </span></td>
+   </tr>`
+    );
+  });
+};
+document.addEventListener("DOMContentLoaded", () => {
+  $.get("api.json", function (data) {
+    showCards(data);
+  });
+});

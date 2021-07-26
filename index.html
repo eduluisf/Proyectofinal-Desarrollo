@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/27d77282d9.js" crossorigin="anonymous"></script>
    
-   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -156,7 +156,7 @@
 
 <template id="template-cart">
 <tr>
-  <th scope="row">id</th>
+  <th class="template-cart"  scope="row">id</th>
   <td>Café</td>
   <td>1</td>
   <td>
@@ -173,9 +173,9 @@
 
 <template id="template-card">
   <div class="col-lg-4  col-md-6 col-xl-3" >
-    <div class="card" style="width:18rem; padding:4px; margin:8px 0px;" >
+    <div class="card" style=" height: 40vh; width:18rem; padding:4px; margin:8px 0px;" >
 
-      <img src="" alt="" class="card-img-top">
+      <img src="" alt="" style=" height: 50%;" class="card-img-top">
       
       <div class="card-body">
         <h5>Titulo</h5>
@@ -188,9 +188,12 @@
 
 
 
-<div class="container containerMain">
-  <div class="row " id="cards"></div>
-</div>    
+<div class="container containerMain" id="containerCards">
+  <div class="row" id="cards">
+
+  </div> 
+ </div>  
+  
 
        <footer>
       <div class="inf-Footer">        
