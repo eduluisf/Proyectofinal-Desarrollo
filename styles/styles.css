@@ -10,10 +10,10 @@
   --b3: #c4c7f2;
   --b4: #f5ea8e;
   --b5: #f7bcb8;
-  --b6: #eaebf5;
+  --b6: #fcfcfc;
 }
 body {
-  background-color: #f9faff;
+  background-color: var(--b6);
   font-family: "Montserrat", sans-serif;
 }
 .menu_container,
@@ -163,7 +163,7 @@ a {
 /* caorusel */
 .carousel-item {
   width: 100%;
-  height: 50vh;
+  height: 45vh;
   overflow: hidden;
 }
 
