@@ -161,7 +161,7 @@ a {
   opacity: 0.6;
   border-radius: 25px;
   background-color: var(--b2);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .buscador .searchButton {
@@ -169,13 +169,21 @@ a {
 }
 
 /* caorusel */
+.containerCarousel {
+  margin: 16px 64px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
 .carousel-item {
   width: 100%;
   height: 46vh;
   overflow: hidden;
+
+  border-radius: 15px;
 }
 
 /*footer */
+
 .inf-Footer {
   margin: 32px 0px 0px;
   background: linear-gradient(
@@ -267,8 +275,9 @@ a {
 }
 .btn-dark:hover {
   color: black;
-  background-color: var(--b4);
+  background-color: var(--b6);
   border: none;
+  border: 1px solid rgb(136, 136, 136);
 }
 /*Carrito de comprasretractil*/
 
@@ -292,11 +301,15 @@ a {
 }
 
 #btn-more {
-  background-color: var(--b4);
+  color: white;
+  background-color: var(--b1);
+  border: none;
 }
+
 #btn-less,
 #emptyCart {
-  background-color: var(--b5);
+  background-color: var(--b4);
+  border: none;
 }
 
 /*Estilos del forumlario */
@@ -734,53 +747,78 @@ a {
 }
 
 .filtercontainer {
-  background-color: var(--b3);
   display: flex;
-  flex-direction: column;
+  background-color: var(--b2);
+  padding: 8px;
   width: 20%;
-  height: 100vh;
+  height: 85vh;
   position: fixed;
   margin: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 16px;
+  box-shadow: 0 4px 8px 0 rgba(66, 62, 3, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  gap: 0;
 }
+
 .filterItems {
   display: flex;
   flex-direction: column;
-  margin: 16px 16px;
-  top: 0;
+  padding: 0;
+  height: 80%;
+  margin: 0px;
+  align-items: flex-start;
+  align-content: center;
 }
 .filterItem {
+  font-size: 16px;
   display: flex;
   flex-direction: column;
-  margin: 0px;
+  padding: 8px 16px;
+  align-items: center;
+  align-content: center;
 }
 
 .filterItem p {
-  font-size: 24px;
-  padding: 12px 0px;
+  font-size: 16px;
+  height: 3vh;
 }
 .filterPrecio {
   display: flex;
   flex-direction: column;
-  margin: 0px;
+  margin: 8px;
+  padding: 8px;
+  align-items: flex-start;
+  align-content: flex-start;
 }
+.filterItem .filterCat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 0;
+}
+
 .sliderPrecio {
   width: 100%;
-}
-.filterPrecio .buttonsContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 16px;
+  color: black;
 }
 
 .inputPrice {
   width: 30%;
 }
 .chkboxContainer {
-  margin: 8px 16px;
+  margin: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
+}
+.filterItem .filterPrecio .inputPrice {
+  padding: 0;
+  margin: 0 4px;
 }
