@@ -15,10 +15,10 @@ navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("menu_visible");
 });
 
-const buttonCart = document.querySelector(".buttonCart");
+const buttonCart = $(".buttonCart");
 const tableContainer = document.querySelector(".tableContainer");
 
-buttonCart.addEventListener("click", () => {
+buttonCart.on("click", () => {
   tableContainer.classList.toggle("table_visible");
 });
 
