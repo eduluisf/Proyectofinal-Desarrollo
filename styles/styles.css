@@ -161,7 +161,7 @@ a {
   opacity: 0.6;
   border-radius: 25px;
   background-color: var(--b2);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .buscador .searchButton {
@@ -169,18 +169,21 @@ a {
 }
 
 /* caorusel */
+.containerCarousel {
+  margin: 16px 64px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
 .carousel-item {
-  width: 90%;
+  width: 100%;
   height: 46vh;
   overflow: hidden;
-  margin: 32px 0;
-  padding: 32px auto;
-  left: 5%;
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+
   border-radius: 15px;
 }
 
 /*footer */
+
 .inf-Footer {
   margin: 32px 0px 0px;
   background: linear-gradient(
