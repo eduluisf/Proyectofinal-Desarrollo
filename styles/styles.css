@@ -3,17 +3,18 @@
   padding: 0;
   margin: 0;
 }
+
 :root {
   font-size: 16px;
-  --b1: #5a56bf;
-  --b2: #a2a6f2;
+  --b1: #000000;
+  --b2: #ffffff;
   --b3: #c4c7f2;
-  --b4: #f5ea8e;
+  --b4: #020202;
   --b5: #f7bcb8;
-  --b6: #eaebf5;
+  --b6: #fcfcfc;
 }
 body {
-  background-color: #f9faff;
+  background-color: var(--b6);
   font-family: "Montserrat", sans-serif;
 }
 .menu_container,
@@ -33,6 +34,7 @@ a {
   z-index: 3;
   margin: 0;
   padding: 0;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
 .navigation .navContainer {
   display: flex;
@@ -40,7 +42,7 @@ a {
   flex-direction: row;
   list-style: none;
   justify-content: space-around;
-  margin: 0 32px;
+  margin: 0 0px 0 32px;
   overflow: hidden;
 }
 
@@ -95,6 +97,8 @@ a {
   color: WHITE;
   font-size: 14px;
   border-radius: 10px 0 0 10px;
+  box-shadow: 0 2px 4px 0 rgba(172, 172, 172, 0.2),
+    0 2px 4px 0 rgba(172, 172, 172, 0.2);
 }
 .buscador .searchbtn {
   display: flex;
@@ -106,6 +110,8 @@ a {
   color: white;
   font-size: 14px;
   border-radius: 0 10px 10px 0;
+  box-shadow: 0 2px 4px 0 rgba(172, 172, 172, 0.2),
+    0 2px 4px 0 rgba(172, 172, 172, 0.2);
 }
 .buscador .iconContainer i {
   margin: 8px;
@@ -116,8 +122,9 @@ a {
   height: 36px;
   padding: 16px;
   font-size: 14px;
+  box-shadow: 0 2px 4px 0 rgba(172, 172, 172, 0.2),
+    0 2px 4px 0 rgba(172, 172, 172, 0.2);
 }
-
 .navigation .navContainer .userContainer {
   display: flex;
   width: 100%;
@@ -149,10 +156,11 @@ a {
   font-size: 16px;
 }
 .navigation .navContainer .userContainer .menu_container .userItem:hover {
+  width: 50%;
   color: black;
   opacity: 0.6;
   border-radius: 25px;
-  background-color: var(--b4);
+  background-color: var(--b2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -163,7 +171,7 @@ a {
 /* caorusel */
 .carousel-item {
   width: 100%;
-  height: 50vh;
+  height: 46vh;
   overflow: hidden;
 }
 
@@ -186,6 +194,7 @@ a {
 .containerCard {
   display: grid;
   width: 50%;
+
   justify-content: space-around;
   margin: 32px 0px 32px 8rem;
 }
@@ -203,7 +212,7 @@ a {
   font-size: 24px;
 }
 .containerrow {
-  margin: 32 0 0 184px;
+  margin: 32px 0 0 184px;
 }
 .container {
   margin: 0px 0px 0px 25%;
@@ -212,35 +221,35 @@ a {
   left: 30%;
 }
 .containerMain {
-  margin: 32px 0 0 64px;
+  margin: 8px 0 0 64px;
   padding: 0;
   width: 100%;
 }
 
-.content {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
-}
 .card {
   display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
   flex-direction: column;
   border-radius: 10%;
-  margin: 32px;
+  margin: 0px;
+  height: 40vh;
+  padding: 32px;
 }
 .card:hover {
   display: flex;
   flex-direction: column;
   border-radius: 10%;
   width: 275px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   transform: translateY(-10px);
 }
+
 .card img {
-  margin: 0px 0px 4px 4px;
-  max-width: 100%;
+  margin: 0px auto;
+  width: 60%;
   border-radius: 10%;
+  height: 50%;
 }
 .card .card-body {
   display: flex;
@@ -249,9 +258,12 @@ a {
   align-items: center;
 }
 .btn-dark {
+  border-radius: 25px;
   color: white;
   background-color: var(--b1);
   border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 50%;
 }
 .btn-dark:hover {
   color: black;

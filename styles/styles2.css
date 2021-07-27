@@ -1,0 +1,45 @@
+.containerinfomain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  max-width: 90%;
+  margin: 16px auto;
+  height: 40vh;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+
+.containerinfomain .containerInfoimg {
+  width: 25%;
+  height: 100%;
+  margin: 0;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.containerinfomain .containerInfoText {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 90%;
+  padding: 16px;
+  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.containerinfomain .containerInfoTextRight {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 90%;
+  padding: 16px;
+  align-items: center;
+  justify-content: space-around;
+  align-items: flex-end;
+}
