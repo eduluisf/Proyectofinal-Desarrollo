@@ -634,6 +634,9 @@ a {
     position: fixed;
   }
 
+  .card {
+    background-color: red;
+  }
   .buscador {
     display: none;
     justify-content: space-around;
@@ -755,11 +758,10 @@ a {
   position: fixed;
   margin: 0;
   flex-direction: column;
-  flex-wrap: wrap;
   margin: 16px;
   box-shadow: 0 4px 8px 0 rgba(66, 62, 3, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
   overflow: hidden;
-  gap: 0;
+  border-radius: 15px;
 }
 
 .filterItems {
