@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -14,7 +16,7 @@
   --b6: #fcfcfc;
 }
 body {
-  background-color: var(--b6);
+  background-color: var(--b2);
   font-family: "Montserrat", sans-serif;
 }
 .menu_container,
@@ -23,18 +25,27 @@ a {
   list-style: none;
 }
 /*nav */
+header {
+  width: 100%;
+  margin: 0px 0px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(172, 172, 172, 0.2),
+    0 2px 4px 0 rgba(172, 172, 172, 0.2);
+}
 .navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   height: 8vh;
-  background-color: var(--b2);
-  overflow: hidden;
   z-index: 3;
   margin: 0;
   padding: 0;
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
 .navigation .navContainer {
   display: flex;
@@ -42,7 +53,7 @@ a {
   flex-direction: row;
   list-style: none;
   justify-content: space-around;
-  margin: 0 0px 0 32px;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -50,7 +61,7 @@ a {
   display: flex;
   justify-content: space-around;
   font-size: 22px;
-  margin: 8px;
+
   overflow: hidden;
 }
 .hamb-menu {
@@ -60,7 +71,7 @@ a {
 .logoContainer {
   display: flex;
   flex-direction: row;
-  margin: 0 32px;
+  margin: 0 16px 0 32px;
 }
 .logoContainer a {
   display: flex;
@@ -68,14 +79,14 @@ a {
   color: var(--b4);
   justify-content: space-around;
   align-items: center;
-  margin: 0 16px;
+  margin: 0px;
 }
 .logoContainer p {
   display: flex;
   align-items: center;
   font-size: 24px;
   color: var(--b4);
-  margin: 0 16px;
+  margin: 0 32px;
 }
 .buscador {
   display: flex;
@@ -84,7 +95,7 @@ a {
   border-radius: 10px;
   padding: 4px 0px;
   margin: 0;
-  width: 150vh;
+  width: 250vh;
 }
 
 .buscador .filterbtn {
@@ -128,7 +139,6 @@ a {
 .navigation .navContainer .userContainer {
   display: flex;
   width: 100%;
-  margin: 0 1em;
   justify-content: space-around;
   font-size: 16px;
   align-items: center;
@@ -137,10 +147,6 @@ a {
 }
 .navigation .navContainer .userContainer .menu_container {
   display: flex;
-
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .navigation .navContainer .userContainer .menu_container .userItem {
   display: flex;
@@ -173,6 +179,8 @@ a {
   margin: 16px 64px;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 15px;
+  animation: fadeInLeft;
+  animation-duration: 2.02s;
 }
 .carousel-item {
   width: 100%;
@@ -180,20 +188,17 @@ a {
   overflow: hidden;
 
   border-radius: 15px;
+  animation: fadeInLeft;
 }
 
 /*footer */
 
 .inf-Footer {
+  position: absolute;
   margin: 32px 0px 0px;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 8%,
-    rgba(89, 44, 144, 1) 50%,
-    rgba(45, 22, 92, 1) 92%
-  );
+
   display: grid;
-  max-width: 100%;
+  width: 100%;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100px;
   overflow: hidden;
@@ -211,7 +216,7 @@ a {
 }
 
 .containerCard .netContainer .list-footer {
-  color: white;
+  color: black;
   display: grid;
   align-content: center;
   grid-template-columns: 50% 50%;
@@ -223,7 +228,7 @@ a {
   margin: 32px 0 0 184px;
 }
 .container {
-  margin: 0px 0px 0px 25%;
+  margin: 64px 0px 0px 25%;
   padding: 0;
   width: 70%;
   left: 30%;
@@ -232,21 +237,23 @@ a {
   margin: 8px 0 0 64px;
   padding: 0;
   width: 100%;
+  border-radius: 10px;
 }
 
 .card {
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
   flex-direction: column;
-  border-radius: 10%;
-  margin: 0px;
-  height: 40vh;
+  border-radius: 10px;
+  height: 42vh;
   padding: 32px;
+  margin: 16px 0;
+  width: 275px;
 }
 .card:hover {
   display: flex;
   flex-direction: column;
-  border-radius: 10%;
+  border-radius: 10px;
   width: 275px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -271,7 +278,7 @@ a {
   background-color: var(--b1);
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 50%;
+  width: 80%;
 }
 .btn-dark:hover {
   color: black;
@@ -531,28 +538,11 @@ a {
 
   .buscador {
     display: none;
-    justify-content: space-around;
     align-items: center;
     width: 300px;
     border-radius: 10px;
     padding: 4px 0px;
     margin: 0em;
-  }
-
-  .logoContainer p {
-    margin-top: 16px;
-  }
-  .logoContainer a {
-    display: flex;
-    font-size: 32px;
-    color: var(--b4);
-    justify-content: space-around;
-    margin: 16px 0px 16px 32px;
-  }
-  .logoContainer a {
-    display: fixed;
-    z-index: 3;
-    bottom: 0;
   }
 
   .navigation .navContainer .userContainer {
@@ -747,28 +737,25 @@ a {
 }
 
 .filtercontainer {
-  display: flex;
+  position: fixed;
   background-color: var(--b2);
   padding: 8px;
   width: 20%;
-  height: 85vh;
-  position: fixed;
-  margin: 0;
+  height: 90vh;
+  margin: 8px 32px;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin: 16px;
   box-shadow: 0 4px 8px 0 rgba(66, 62, 3, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
-  overflow: hidden;
-  gap: 0;
+  border-radius: 10px;
 }
 
 .filterItems {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  height: 80%;
+  padding: 16px auto;
+  height: 0vh;
   margin: 0px;
   align-items: flex-start;
+  align-content: center;
   align-content: center;
 }
 .filterItem {
@@ -781,24 +768,18 @@ a {
 }
 
 .filterItem p {
-  font-size: 16px;
+  font-size: 14px;
   height: 3vh;
 }
-.filterPrecio {
-  display: flex;
-  flex-direction: column;
-  margin: 8px;
-  padding: 8px;
-  align-items: flex-start;
-  align-content: flex-start;
-}
+
 .filterItem .filterCat {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
+  align-items: center;
+  align-items: center;
+  align-content: space-around;
   margin: 0;
+  font-size: 12px;
 }
 
 .sliderPrecio {
@@ -808,17 +789,19 @@ a {
 
 .inputPrice {
   width: 30%;
+  margin: 16px;
 }
+
 .chkboxContainer {
   margin: 8px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
 }
 .filterItem .filterPrecio .inputPrice {
   padding: 0;
   margin: 0 4px;
+}
+
+.catfilterit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
