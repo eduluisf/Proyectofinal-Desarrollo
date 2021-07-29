@@ -11,6 +11,9 @@
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 8px 16px;
+
+  animation: fadeInRight;
+  animation-duration: 2.08s;
 }
 
 .containerinfomain .containerInfoimg {
@@ -42,4 +45,59 @@
   align-items: center;
   justify-content: space-around;
   align-items: flex-end;
+}
+
+.mainadvice {
+  width: 90%;
+  background-color: #ffffff;
+  opacity: 0.8;
+  height: 88vh;
+  margin: 80px auto 16px auto;
+  box-shadow: 0 4px 16px 8px rgba(78, 55, 55, 0.2);
+  border-radius: 10px;
+  padding: 64px 32px;
+  padding-top: 64px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  animation: fadeInLeft;
+  animation-duration: 2s;
+}
+
+.mainAdvContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+
+  justify-content: space-around;
+  padding: 64px;
+}
+.mainadvice .mainAdvContent .textAdviceContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.mainadvice .textAdviceContainer p {
+  margin: 16px 32px;
+}
+
+.mainadvice .textAdviceContainer h3 {
+  margin: 16px 32px;
+  font-size: 32px;
+}
+.mainadvice .textAdviceContainer h3 span {
+  color: orange;
+}
+.mainadvice img {
+  width: 40%;
+  border-radius: 6px;
+  margin: 32px;
+}
+
+.mainadvice .btn {
+  width: 40%;
+
+  margin: 32px;
 }
